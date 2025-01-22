@@ -1,14 +1,22 @@
 /* master font */
 body {
     font-family: "Quicksand", serif;
+    margin: 0 auto;
     font-optical-sizing: auto;
     font-weight: 100%;
     font-style: normal;
-    background: rgba(237, 224, 192, 0.714);
+    background: rgb(247, 247, 247) url("../assets/bg.png");
+    
 }
 /* stoke css  */ 
 .desplay-flex {
     display: flex;
+}
+.bg-light {
+    background-color: rgb(247, 247, 247)
+}
+.text-a {
+    font-weight: 400;
 }
 .text-gray {
     color: rgb(102, 102, 102);
@@ -111,12 +119,12 @@ main > section {
 }
 
 /* main section mid-filder */
-main {
+/* main {
     background-image: url("../assets/bg.png");
 }
 .mid-filder {
     background: url("../assets/bg.png");
-}
+} */
 .mid-title {
     font-size: 46px;
 }
@@ -143,9 +151,9 @@ main {
 }
 .skill1 {
     /* Section */
-position: relative;
-width: 367.8px;
-height: 476.78px;
+    position: relative;
+    width: 367.8px;
+    height: 476.78px;
     box-sizing: border-box;
     border: 0.94px solid rgb(222, 245, 255);
     border-radius: 18.86px;
@@ -214,10 +222,12 @@ height: 476.78px;
 
 
 /* section 2 */
-.our-sec {
 
+main {
+    margin: 0% auto;
+    margin-bottom: -80px;
+    background: url(image),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 }
-
 .our-head-king {
     gap: 28px;
 }
@@ -252,8 +262,6 @@ height: 476.78px;
     grid-template-columns: repeat(2, 1fr);
 }
 
-
-
 .btn-primium {
     background-color: rgb(60, 216, 232);
     border-radius: 47.93px;
@@ -261,6 +269,9 @@ height: 476.78px;
     height: 70px;
     margin-top: -50px;
     margin-left: 20px;
+}
+.btn1 {
+    margin-bottom: 100px;
 }
 .btn2 {
     background-color: rgb(149, 178, 38);
@@ -320,14 +331,31 @@ footer {
  .mid-filder, .mid-container, .banner, .footer-head, .navbar, nav, nav>ul{
         flex-direction: column;
     }
+    .btn1 {
+        margin-bottom: 200px;
+    }
+
+    .navbar {
+        width: 100%;
+        height: 20px;
+    }
+    .our-head-king {
+        margin: 10px;
+    }
     main {
         background-image: none;
     }
-    .nav-links1 {
+    .nav-links1, .icon-1 {
         display: none;
+    }
+    footer {
+        margin: 0 auto;
     }
     .footer-head {
         padding: 20px;
+    }
+    .footer-section {
+        margin: 20px;
     }
     .nav-links {
         display: none;
@@ -356,6 +384,9 @@ footer {
     }
     .banner-profile-picture {
         width: 100%;
+    }
+    .mid-title {
+        font-size: 35px;
     }
 }
 
