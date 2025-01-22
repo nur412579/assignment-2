@@ -271,24 +271,47 @@ height: 476.78px;
 /* footer section */
 
 footer {
-    height:  519px;
-    background-color: blue;
+    background-color: rgba(38, 133, 100, 0.617);
+    color: #ffffff;
     margin: 0 auto;
     margin-top: 60px;
 }
 .footer-head {
     justify-content: center;
-    
+    gap: 40px;
+    padding-top: 200px;
+    padding-left: 100px;
+    padding-bottom: 200px;
 }
 .footer-container {
-    
+    width: 480px;
+    gap: 30px;
+    justify-content: center;
 }
+.footer-container2{
+    width: 480px;
+}
+.footer-container2 ul >  li {
+    padding-top: 8px;
+}
+.footer-container3 {
+    width: 400px;
+}
+.footer-description {
+    width: 250px;
+}
+
 /* device @ */
 @media screen and (max-width: 576px) {
- .mid-filder, .mid-container, .banner, nav, nav>ul{
+ .mid-filder, .mid-container, .banner, .footer-head,  nav, nav>ul{
         flex-direction: column;
     }
-
+    .div-stores {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-div {
+        display: none;
+    }
     .school {
         display: none;
     }
